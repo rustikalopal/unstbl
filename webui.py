@@ -145,10 +145,7 @@ def inpaint_mode_change(mode, inpaint_engine_version):
 
 reload_javascript()
 
-title = f'Fooocus {fooocus_version.version}'
-
-if isinstance(args_manager.args.preset, str):
-    title += ' ' + args_manager.args.preset
+title = f'Unstable Diffusion'
 
 shared.gradio_root = gr.Blocks(title=title).queue()
 
